@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="audio.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <article id="logo"><img src="./img/logo.png" width="200" /></article>
+      <nav>
+        <article class="nav1">Musique</article>
+        <article class="nav1">Podcast</article>
+        <article class="nav1">Livre Audio</article>
+        <article class="nav1">Tout</article>
+      </nav>
+      <aside>
+        <article class="aside1">
+          <button
+            onclick="filterDocument()"
+            class="fa-solid fa-magnifying-glass"
+          ></button
+          >&nbsp;
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Recherche"
+          />
+        </article>
+        <article class="aside1">
+          <i class="fa-solid fa-circle-user"></i>&nbsp;Profil
+        </article>
+        <article class="aside1">
+          <i class="fa-solid fa-book"></i>&nbsp;Bibliothèque
+        </article>
+        <article class="aside1">
+          <i class="fa-solid fa-gear"></i>&nbsp;Paramètre
+        </article>
+      </aside>
+    </header>
+    <main>
+      <picture id="jul" class="image">
+        <source media="(min-width:992px)" srcset="./img/1340.jpg" />
+        <source media="(min-width:768px)" srcset="./img/1250.jpg" />
+        <source media="(min-width:576px)" srcset="./img/1175.jpg" />
+        <img src="./img/1150.jpg" style="width: auto" />
+        <h1 class="titree">Poser sur le banc</h1>
+        <p class="artistname">Inconnu</p>
+        <audio src="./son/Blue_Skies.mp3"></audio>
+      </picture>
+      <picture id="xx" class="image">
+        <source media="(min-width:992px)" srcset="./img/2340.jpg" />
+        <source media="(min-width:768px)" srcset="./img/2250.jpg" />
+        <source media="(min-width:576px)" srcset="./img/2175.jpg" />
+        <img src="./img/2150.jpg" style="width: auto" />
+        <h1 class="titree">Tableau flou</h1>
+        <p class="artistname">Inconnu1</p>
+        <audio src="./son/Cartoon_Hoedown.mp3"></audio>
+      </picture>
+      <picture id="jezu" class="image">
+        <source media="(min-width:992px)" srcset="./img/3340.jpg" />
+        <source media="(min-width:768px)" srcset="./img/3250.jpg" />
+        <source media="(min-width:576px)" srcset="./img/3175.jpg" />
+        <img src="./img/3150.jpg" style="width: auto" />
+        <h1 class="titree">Croix noir</h1>
+        <p class="artistname">Inconnu2</p>
+        <audio src="./son/Earthy_Crust.mp3"></audio>
+      </picture>
+      <picture id="momo" class="image">
+        <source media="(min-width:992px)" srcset="./img/4340.jpg" />
+        <source media="(min-width:768px)" srcset="./img/4250.jpg" />
+        <source media="(min-width:576px)" srcset="./img/4175.jpg" />
+        <img src="./img/4150.jpg" style="width: auto" />
+        <h1 class="titree">Caliente</h1>
+        <p class="artistname">Inconnu3</p>
+        <audio src="./son/Hold_On_a_Minute.mp3"></audio>
+      </picture>
+      <picture id="celin" class="image">
+        <source media="(min-width:992px)" srcset="./img/5340.jpg" />
+        <source media="(min-width:768px)" srcset="./img/5250.jpg" />
+        <source media="(min-width:576px)" srcset="./img/5175.jpg" />
+        <img src="./img/5150.jpg" style="width: auto" />
+        <h1 class="titree">Visage</h1>
+        <p class="artistname">Inconnu4</p>
+        <audio src="./son/JohnDunbarTheme.mp3"></audio>
+      </picture>
+      <picture id="pierre" class="image">
+        <source media="(min-width:992px)" srcset="./img/6340.jpg" />
+        <source media="(min-width:768px)" srcset="./img/6250.jpg" />
+        <source media="(min-width:576px)" srcset="./img/6175.jpg" />
+        <img src="./img/6150.jpg" style="width: auto" />
+        <h1 class="titree">Statue</h1>
+        <p class="artistname">Inconnu5</p>
+        <audio src="./son/Stay_With_You.mp3"></audio>
+      </picture>
+      <picture id="lartiste" class="image">
+        <source media="(min-width:992px)" srcset="./img/7340.jpg" />
+        <source media="(min-width:768px)" srcset="./img/7250.jpg" />
+        <source media="(min-width:576px)" srcset="./img/7175.jpg" />
+        <img src="./img/7150.jpg" style="width: auto" />
+        <h1 class="titree">imprimante</h1>
+        <p class="artistname">Inconnu6</p>
+        <audio src="./son/printer.mp3"></audio>
+      </picture>
+    </main>
+    <footer>
+      <section class="arrowsound">
+        <article class="arrow">
+          <button class="button"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="button">
+            <i class="fa-solid fa-circle-play"></i>
+          </button>
+          <button class="button">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+        <article class="sound">
+          <form action="/action_page.php">
+            <label for="vol"></label>
+            <input
+              type="range"
+              id="vol"
+              name="vol"
+              step="0.01"
+              min="0"
+              max="1"
+              value="1"
+            />
+            <span><i class="fa-solid fa-volume-high"></i>&nbsp;</span>
+          </form>
+        </article>
+      </section>
+      <section class="info">
+        <article class="info1">
+          <h1 class="music1">Poser sur le banc</h1>
+          <p class="music2">Inconnu</p>
+        </article>
+        <article class="infotime">
+          <form action="/action_page.php">
+            <label for="time" id="currentTime">0:00</label>
+            <input type="range" id="time" name="time" min="0" step="0.1" />
+            <span id="duration">0:00</span>
+          </form>
+        </article>
+      </section>
+    </footer>
+    <script type="text/javascript" src="audio.js"></script>
+  </body>
+</html>

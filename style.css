@@ -1,0 +1,196 @@
+*{box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 10px;
+    color: rgb(85, 167, 214);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.nav1 {
+    border-style: none;
+    background-color: rgb(85, 167, 214);
+    border-width: 1.5px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border-style: hidden;
+    background-color: rgb(85, 167, 214);
+    border-width: 1.5px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.aside1 {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 80px;
+    margin: 50px;
+}
+
+@media only screen and (max-width:576px) {
+    .image{
+        width: calc((100% - 80px) / 2);
+        font-size: 10px;
+    }
+    aside {
+        flex-direction: row;
+    }
+
+    .arrowsound, .info{
+        width: 50%;
+    }
+    .info1{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:577px) {
+    .image {
+        width: calc((100% - 80px) / 2);
+        font-size: 15px;
+    }
+
+    aside {
+        flex-direction: row;
+    }
+
+    .info1{
+        font-size: 10px;
+    }
+    .arrowsound, .info{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .image {
+        width: calc((100% - 160px) / 3);
+    }
+}
+@media only screen and (min-width:768px){
+    .image {
+        width: calc((100% - 240px)/ 4 );
+    }
+}
+@media only screen and (max-width:893px){
+    aside {
+        flex-direction: row;
+    }
+}
+
+.image {
+    border-style: solid;
+    color: rgb(85, 167, 214);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    border-style: solid;
+    border-left: hidden;
+    border-right: hidden;
+    border-color: rgb(85, 167, 214);
+    border-width: 10px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-around;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    color: rgb(85, 167, 214);
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.sound {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    color: rgb(85, 167, 214);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+}
+
+.arrowsound {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.music {
+    font-size: 2.5em;
+}
+
+.info1 {
+    color: rgb(85, 167, 214);
+}
+
+.infotime {
+    color: rgb(85, 167, 214);
+}
+.button{
+    cursor: pointer;
+}
